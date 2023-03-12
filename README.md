@@ -21,3 +21,9 @@ Webfonts
 ###
 Open public page on Git https://raknarrok.github.io/
 
+###
+Branch strategy used to avoid update directly to main branch.
+
+Branch Naming Convention
+
+FeatureID_FeatureImpacted_Description
