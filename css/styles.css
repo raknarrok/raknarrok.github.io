@@ -17,6 +17,15 @@
   color: #ffffff;
   background-attachment: fixed;
 }
+.heroWorkingScreen{
+  background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)),url(/images/backgrounds/working_so_hard.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  background-attachment: fixed;
+}
 .nosotrosScreen{ 
   background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)),url(/images/backgrounds/bg_bebas.png);
   width: 100%;
