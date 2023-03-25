@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.59.3"
+  },
+  "name": "mipekichaweb",
+  "description": "Mipekicha Web Site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raknarrok/raknarrok.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raknarrok/raknarrok.github.io/issues"
+  },
+  "homepage": "https://github.com/raknarrok/raknarrok.github.io#readme",
+  "devDependencies": {}
+}
