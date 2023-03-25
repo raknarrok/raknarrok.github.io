@@ -1,0 +1,277 @@
+// define variables for the primary colors
+$primary_1: #2ad5eb;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+
+// Remove Styles to Links
+a {
+    text-decoration: none;
+}
+
+/* use the variables */
+.main-header {
+    background-color: $primary_1;
+}
+
+.menu-left {
+    background-color: $primary_2;
+}
+
+.menu-right {
+    background-color: $primary_3;
+}
+
+// Hero Sections
+.heroWorkingScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/working_so_hard.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.heroAmbassadorScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg1_ash.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.heroIndexScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_kiro.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.nosotrosScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_bebas.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.nosotrosScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_bebas.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.mainText{
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: start;  
+    align-items: center;
+  }
+
+/**
+* Buttons Section
+*/
+
+// Variable declaration and validation
+$txtColor: white;
+$bgColor: #529e91;
+$borderColor: #acfa74;
+$bgHoverColor: gray;
+$borderHoverColor: rgb(176, 231, 204);
+
+// Class Section
+.mpk_button {
+    margin: 0 2px 10px 0;
+    color: $txtColor;
+    background-color: $bgColor;
+    border-radius: 20% / 50%;
+    padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
+    border-style: solid;
+    border-color: $borderColor;
+
+    &:hover {
+        color: $txtColor;
+        background-color: $bgHoverColor;
+        border-color: $borderHoverColor;
+        border-width: 5px;
+    }
+}
+
+.btnSection{
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+/**
+* Image Controllers
+*/
+.mpk_img_size {
+    width: 500px;
+    height: 500px;
+}
+
+.mpk_img_nosotros {
+    width: 250px;
+    height: 250px;
+}
+
+/**
+* Configuration Section
+*/
+.section_padding {
+    padding-top: 90px;
+}
+
+// Backgrounds
+.bg_dark {
+    background-color: #212529;
+    & div {
+        background-color: #212529;
+    }
+}
+
+.bg_gray {
+    background-color: #f0f0f0;
+    & div {
+        background-color: #f0f0f0;
+    }
+}
+
+.mpk_link_color {
+
+    & {
+        color: #5fd3f3;
+    }
+
+    & a {
+        color: #5fd3f3;
+    }
+
+    & a:hover {
+        color: #683e68;
+    }
+}
+
+/**
+Animation Section
+*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transform: scale(0);
+        bottom: 0;
+        left: 0;
+        background-color: #00c3ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+// Text
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+// Media Quries
+@media only screen and (max-width: 500px) {
+    .image_responsive {
+        width: 80%;
+        height: 80%;
+    }
+
+    .frame_responsive {
+        width: 100%;
+    }
+}
