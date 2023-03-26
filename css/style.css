@@ -25,16 +25,6 @@ a {
   background-attachment: fixed;
 }
 
-.heroAmbassadorScreen {
-  background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg1_ash.png);
-  width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  color: #ffffff;
-  background-attachment: fixed;
-}
-
 .heroIndexScreen {
   background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_kiro.png);
   width: 100%;
@@ -45,23 +35,41 @@ a {
   background-attachment: fixed;
 }
 
-.nosotrosScreen {
-  background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_bebas.png);
+.heroProductsScreen {
+  background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_productos.jpg);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-size: cover;
-  background-repeat: repeat;
+  color: #ffffff;
   background-attachment: fixed;
 }
 
-.nosotrosScreen {
+.heroNosotrosScreen {
   background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_bebas.png);
   width: 100%;
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.heroSucursalesScreen {
+  background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/working_so_hard.png);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heroAmbassadorScreen {
+  background: linear-gradient(rgba(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg1_ash.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
   background-attachment: fixed;
 }
 
@@ -144,6 +152,9 @@ a {
 /**
 Animation Section
 */
+/*
+    Menu Underline
+*/
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -165,6 +176,9 @@ Animation Section
   transform-origin: bottom left;
 }
 
+/*
+    Text SlideDown
+*/
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -196,6 +210,9 @@ Animation Section
     transform: translateY(0);
   }
 }
+/*
+    Text FadeIn
+*/
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -229,6 +246,9 @@ Animation Section
     transform: none;
   }
 }
+/*
+    Slide Appear
+*/
 @media only screen and (max-width: 500px) {
   .image_responsive {
     width: 80%;

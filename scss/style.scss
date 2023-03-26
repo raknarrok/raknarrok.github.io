@@ -32,16 +32,6 @@ a {
     background-attachment: fixed;
 }
 
-.heroAmbassadorScreen {
-    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg1_ash.png);
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    color: #ffffff;
-    background-attachment: fixed;
-}
-
 .heroIndexScreen {
     background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_kiro.png);
     width: 100%;
@@ -52,23 +42,41 @@ a {
     background-attachment: fixed;
 }
 
-.nosotrosScreen {
-    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_bebas.png);
+.heroProductsScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_productos.jpg);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    color: #ffffff;
     background-attachment: fixed;
 }
 
-.nosotrosScreen {
+.heroNosotrosScreen {
     background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg_bebas.png);
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.heroSucursalesScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/working_so_hard.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heroAmbassadorScreen {
+    background: linear-gradient(rgb(12, 12, 12, 0.479), rgba(12, 12, 12, 0.479)), url(../images/backgrounds/bg1_ash.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
     background-attachment: fixed;
 }
 
@@ -167,6 +175,10 @@ $borderHoverColor: rgb(176, 231, 204);
 /**
 Animation Section
 */
+
+/*
+    Menu Underline
+*/
 .hover-underline-animation {
     display: inline-block;
     position: relative;
@@ -190,7 +202,9 @@ Animation Section
     }
 }
 
-// Text
+/*
+    Text SlideDown
+*/
 .slideInDown {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
@@ -226,6 +240,9 @@ Animation Section
     }
 }
 
+/*
+    Text FadeIn
+*/
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
@@ -262,6 +279,10 @@ Animation Section
         transform: none;
     }
 }
+
+/*
+    Slide Appear
+*/
 
 
 // Media Quries
