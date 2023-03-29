@@ -22,6 +22,30 @@
 </head>
 
 <body>
+    <!-- Facebook MSG  -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="556672744720754" theme_color="#0caebe"
+        logged_in_greeting="Hola!, cualquier duda contactanos por aqui!"
+        logged_out_greeting="Hola!, cualquier duda contactanos por aqui!">
+    </div>
+
     <section>
         <div class="container">
             <!-- Menu Section -->
@@ -173,7 +197,8 @@
             <!-- Description Product Card -->
             <div class="card col-sm text-center pt-3 pb-3 border-0">
                 <span class="card-img">
-                    <img class="rounded m-2 image_responsive" src="./images/inicio/carusel/kit.png" alt="Combo Collar y Plaquita">
+                    <img class="rounded m-2 image_responsive" src="./images/inicio/carusel/kit.png"
+                        alt="Combo Collar y Plaquita">
                 </span>
                 <h3 class="card-title m-1">
                     La mejor calidad al mejor precio.
@@ -242,7 +267,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer id="idFooter" class="bg-dark text-center text-white">
+    <footer id="fFooter" class="bg-dark text-center text-white">
         <div>
             <div style="padding-top: 36px; padding-bottom: 36px;">
                 <!-- Media Links -->
@@ -260,11 +285,11 @@
                 </div>
                 <!-- Sub Menu -->
                 <span class="mpk_link_color">
-                    <a href="#">Tienda</a> | 
-                    <a href="./productos.html">Productos</a> | 
+                    <a href="#">Tienda</a> |
+                    <a href="./productos.html">Productos</a> |
                     <a href="./nosotros.html">¿Quienes Somos?</a> |
-                    <a href="#">Testimonios</a> | 
-                    <a href="./contacto.html">Contacto</a> | 
+                    <a href="#">Testimonios</a> |
+                    <a href="./contacto.html">Contacto</a> |
                     <a href="./embajadores.html">Embajadores</a>
                 </span>
                 <p id="pFooterCopy" class="mpk_textColor">Copyright (c) 2019 MIPEKICHA. Calle Gladiola # 106, Fracc.
@@ -285,6 +310,8 @@
     <script>
         AOS.init();
     </script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0"></script>
 </body>
 
 </html>
