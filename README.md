@@ -17,6 +17,8 @@ npm - v9.1.1
 
 node - v16.14.2
 
+jQuery - v3.6.3
+
 
 ###
 VSCode Extensions:
