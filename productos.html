@@ -85,13 +85,16 @@
         <h2 class="text-center fw-bold pt-3"> MIS PRODUCTOS</h2>
         <section id="sec_micatalogo" class="container">
             <!-- First Section -->
-            <div id="dFirstSetion" class="row m-auto pb-5 pt-5">
+            <div id="dFirstSection" class="row m-auto pb-5 pt-5">
                 <!-- Cintos -->
                 <div id="dCintos" class="card col-sm text-center border-0">
                     <h2 class="card-title">CINTURONES & CORREAS</h2>
                     <span class="card-img pb-2"><img class="rounded-4"
                             src="./images/productos/micatalogo/cinturones_3.png" alt="Cinturones"></span>
-                    <span class="card-footer"> VER </span>
+                    <span class="card-footer">
+                        <a class="btn btn-primary" id="btnSecCinturones" onclick="showSection('secCinturones')"
+                            href="productos.html#secCinturones">VER</a>
+                    </span>
                 </div>
                 <!-- Collares -->
                 <div id="dCollaers" class="card col-sm text-center border-0">
@@ -136,7 +139,7 @@
     </div>
 
     <!-- CINTURONES Y CORREAS -->
-    <section id="secCinturones" data-rv-view="14" style="display: block;">
+    <section id="secCinturones" data-rv-view="14" style="display: none;">
         <div class="productSection">
             <div class="text-center pt-5 pb-3">
                 <h2 id="hProductoMicatalogo" class="text-white fw-bold">CINTURONES Y CORREAS</h2>
@@ -145,11 +148,11 @@
             <!-- CARD Section -->
             <div class="container pb-3">
                 <div class="row text-center">
-                    <div class="card col-sm hero_img slideInDown">
+                    <div class="card col-sm hero_img slideInDown mb-1">
                         <img class="card-img" src="./images/productos/nuestras_correas/hero_picture.png"
                             alt="hero_picture" style="width: 100%; height: 100%;">
                     </div>
-                    <div class="card col-sm">
+                    <div class="card col-sm ms-1 mb-1">
                         <div class="card-title">
                             <h2>CORREA SLIM</h2>
                         </div>
@@ -158,12 +161,10 @@
                             <p>1.20m de longitud</p>
                             <p>Nombre bordado</p>
                         </div>
-                        <div class="card-img">
-                            <img width="100%" height="400px"
-                                src="./images/productos/nuestras_correas/correa_slim.png" alt="Correas Slim">
-                        </div>
+                        <img class="card-img" width="100%" height="300px"
+                            src="./images/productos/nuestras_correas/correa_slim.png" alt="Correas Slim">
                     </div>
-                    <div class="card col-sm">
+                    <div class="card col-sm ms-1 mb-1">
                         <div class="card-title">
                             <h2>CORREA NORMAL</h2>
                         </div>
@@ -172,10 +173,8 @@
                             <p>1.20m de longitud</p>
                             <p>Nombre bordado</p>
                         </div>
-                        <div class="card-img">
-                            <img width="100%" height="400px"
-                                src="./images/productos/nuestras_correas/correa_normal.png" alt="Correas Normal">
-                        </div>
+                        <img class="card-img" width="100%" height="300px"
+                            src="./images/productos/nuestras_correas/correa_normal.png" alt="Correas Normal">
                     </div>
                 </div>
 
@@ -185,31 +184,27 @@
                         <h2 class="card-title">
                             CORREA ANCHA
                         </h2>
-                        <p class="card-text">
-                        <P>1 ½ pulgada de ancho</P>
-                        <P>1.20m de longitud</P>
-                        <P>Nombre bordado</P>
-                        </p>
-                        <div class="card-img">
-                            <img width="100%" height="400px"
-                                src="./images/productos/nuestras_correas/correa_ancha.png" alt="Correas Ancha">
+                        <div class="card-text">
+                            <p>1 ½ pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre bordado</p>
                         </div>
+                        <img class="card-img mb-5" width="100%" height="300px"
+                            src="./images/productos/nuestras_correas/correa_ancha.png" alt="Correas Ancha">
                     </div>
-                    <div class="card col-sm">
+                    <div class="card col-sm ms-1">
                         <h2 class="card-title">
                             CINTURON DE SEGURIDAD
                         </h2>
-                        <p>1 pulgada de ancho</p>
-                        <p>Ajustable de 50 a 95 cm</p>
-                        <p>Nombre bordado</p>
-
-                        <div class="card-img">
-                            <img width="100%" height="400px"
-                                src="./images/productos/nuestras_correas/cinto_seguridad.png"
-                                alt="Cinto Seguridad">
+                        <div class="card-text">
+                            <p>1 pulgada de ancho</p>
+                            <p>Ajustable de 50 a 95 cm</p>
+                            <p>Nombre bordado</p>
                         </div>
+                        <img class="card-img" width="100%" height="300px"
+                            src="./images/productos/nuestras_correas/cinto_seguridad.png" alt="Cinto Seguridad">
                     </div>
-                    <div class="card col-sm">
+                    <div class="card col-sm ms-1">
                         <h2 class="card-title">
                             CINTURON O CORREA ESPECIAL
                         </h2>
@@ -219,9 +214,8 @@
                     </div>
                 </div>
                 <div class="card-text text-center pt-3">
-                    <a id="aNavComprar" class="mbr-buttons__btn btn btn-danger rounded-pill"
-                        href="index.html#sectionCotikicha"
-                        onclick="fnShowCotizar('sectionBCotikicha','sectionCotikicha')">COMPRAR</a>
+                    <a id="aCinturonesCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
+                        onclick="closeSection('secCinturones')">Cerrar</a>
                 </div>
             </div>
         </div>
@@ -264,6 +258,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./scripts/utility.js"></script>
 </body>
 
 </html>
