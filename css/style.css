@@ -261,6 +261,10 @@ Animation Section
 /*
     Slide Appear
 */
+.sizeController {
+  width: 25px;
+}
+
 @media only screen and (max-width: 500px) {
   .image_responsive {
     width: 80%;
