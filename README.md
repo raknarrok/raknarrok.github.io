@@ -11,16 +11,19 @@ SASS - v1.59.3
 
 Git - v2.35.1
 
-VSCode - v1.75.1
-
 npm - v9.1.1
 
 node - v16.14.2
 
 jQuery - v3.6.3
 
+aos - v2.3.1
+
+fbChat - v6.0
 
 ###
+VSCode - v1.75.1
+
 VSCode Extensions:
 
 Live Server - v5.7.9
