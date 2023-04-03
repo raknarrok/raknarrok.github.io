@@ -77,6 +77,7 @@
                     convinaciones de colores.
                     Ve algunos ejemplos en esta seccion y eligue el que te guste.
                 </p>
+                <a class="btn btn-primary btn-lg fadeInDown" href="#dMicatalogo" role="button">VER PRODUCTOS</a>
             </div>
         </div>
     </section>
@@ -86,7 +87,42 @@
         <h2 class="text-center fw-bold pt-3"> MIS PRODUCTOS</h2>
         <section id="sec_micatalogo" class="container">
             <!-- First Section -->
-            <div id="dFirstSection" class="row m-auto pb-5 pt-5">
+            <div id="dFirstSection" class="row m-auto pb-5 pt-5" data-aos="fade-right">
+                <!-- Collares -->
+                <div id="dCollaers" class="card col-sm text-center border-0">
+                    <h2 class="card-title">COLLARES</h2>
+                    <span class="card-img pb-2"><img class="rounded-4"
+                            src="./images/productos/micatalogo/collares_3.png" alt="Collares"></span>
+                    <span class="card-footer">
+                        <a class="btn btn-primary" id="btnSecCollares" onclick="showSection('secCollares')"
+                            href="productos.html#secCollares">
+                            VER </a>
+                    </span>
+                </div>
+                <!-- Plaquitas -->
+                <div id="dPlaquitas" class="card col-sm text-center border-0">
+                    <h2 class="card-title">PLAQUITAS ALUMINIO</h2>
+                    <span class="card-img pb-2"><img class="rounded-4"
+                            src="./images/productos/micatalogo/plaquitas_3.png" alt="Plaquitas"></span>
+                    <span class="card-footer">
+                        <a class="btn btn-primary" id="btnSecPlaquitas" onclick="showSection('secPlaquitas')"
+                            href="productos.html#secPlaquitas">
+                            VER</a>
+                    </span>
+                </div>
+                <!-- Pampers -->
+                <div id="dPampers" class="card col-sm text-center border-0">
+                    <h2 class="card-title">PAÑALES REUSABLES</h2>
+                    <span class="card-img pb-2"><img class="rounded-4" src="./images/productos/micatalogo/pañales_3.png"
+                            alt="Pañales"></span>
+                    <span class="card-footer">
+                        <a class="btn btn-primary" id="btnSecPampers" onclick="showSection('secPampers')"
+                            href="productos.html#secPampers">
+                            VER </a></span>
+                </div>
+            </div>
+            <!-- Second Section -->
+            <div id="dSecondSection" class="row m-auto" data-aos="fade-right">
                 <!-- Cintos -->
                 <div id="dCintos" class="card col-sm text-center border-0">
                     <h2 class="card-title">CINTURONES & CORREAS</h2>
@@ -97,47 +133,265 @@
                             href="productos.html#secCinturones">VER</a>
                     </span>
                 </div>
-                <!-- Collares -->
-                <div id="dCollaers" class="card col-sm text-center border-0">
-                    <h2 class="card-title">COLLARES</h2>
-                    <span class="card-img pb-2"><img class="rounded-4"
-                            src="./images/productos/micatalogo/collares_3.png" alt="Collares"></span>
-                    <span class="card-footer"> VER </span>
-                </div>
                 <!-- Spray -->
                 <div id="dSpray" class="card col-sm text-center border-0">
                     <h2 class="card-title">CUIDADO DE MI MASCOTA</h2>
                     <span class="card-img pb-2"><img class="rounded-4" src="./images/productos/micatalogo/cuidado_3.png"
                             alt="Aromaterapia"></span>
-                    <span class="card-footer"> VER </span>
+                    <span class="card-footer">
+                        <a class="btn btn-primary" id="btnSecCuidado" onclick="showSection('secCuidado')"
+                            href="productos.html#secCuidado">VER</a>
+                    </span>
                 </div>
-            </div>
-            <!-- Second Section -->
-            <div id="dSecondSection" class="row m-auto">
                 <!-- Kits -->
                 <div id="dKit" class="card col-sm text-center border-0">
                     <h2 class="card-title">KITS PARA MI MASCOTA</h2>
                     <span class="card-img pb-2"><img class="rounded-4" src="./images/productos/micatalogo/kit_3.png"
                             alt="Combos"></span>
-                    <span class="card-footer"> VER </span>
-                </div>
-                <!-- Pampers -->
-                <div id="dPampers" class="card col-sm text-center border-0">
-                    <h2 class="card-title">PAÑALES REUSABLES</h2>
-                    <span class="card-img pb-2"><img class="rounded-4" src="./images/productos/micatalogo/pañales_3.png"
-                            alt="Pañales"></span>
-                    <span class="card-footer"> VER </span>
-                </div>
-                <!-- Plaquitas -->
-                <div id="dPlaquitas" class="card col-sm text-center border-0">
-                    <h2 class="card-title">PLAQUITAS ALUMINIO</h2>
-                    <span class="card-img pb-2"><img class="rounded-4"
-                            src="./images/productos/micatalogo/plaquitas_3.png" alt="Plaquitas"></span>
-                    <span class="card-footer"> VER </span>
+                    <span class="card-footer"> 
+                        <a class="btn btn-primary" id="btnSecKits" onclick="showSection('secKits')"
+                        href="productos.html#secKits">VER</a></span>
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- COLLARES -->
+    <section id="secCollares" data-rv-view="14" style="display: none;">
+        <div class="productSection">
+            <div class="text-center pt-5 pb-3">
+                <h2 id="hProductoMicatalogo" class="text-white fw-bold">COLLARES</h2>
+            </div>
+            <!-- CARD Section -->
+            <div class="container pb-3">
+                <!-- Hero Image Section -->
+                <div class="row">
+                    <div class="card col-sm">
+                        <img class="card-img" src="./images/productos/nuestros_collares/medirScreen.png"
+                            alt="hero_picture">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description Section -->
+            <div class="container">
+                <!-- First Section Card -->
+                <div class="row text-center">
+                    <!-- Collar Slim -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title ">
+                            Collar Slim
+                        </h2>
+                        <div class="card-text">
+                            <p>1/2 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre bordado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_collares/collar_slim.png"
+                            alt="collarSlim">
+                    </div>
+
+                    <!-- Collar Normal -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title">
+                            Collar Normal
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre bordado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_collares/collar_normal.png"
+                            alt="collarNormal">
+                    </div>
+
+                    <!-- Collar Ancho -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title">
+                            Collar Ancho
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1.5 pulgadas de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre bordado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_collares/collar_ancho.png"
+                            alt="collarAncho">
+                    </div>
+
+                    <!-- Collar Coleccion Temporal -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title">
+                            Collar Coleccion Temporal
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre bordado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_collares/collar_temporal.png"
+                            alt="collarTemporal">
+                    </div>
+
+                    <!-- Collar Especial -->
+                    <div class="card col-sm">
+                        <h2 class="card-title">
+                            Collar Especial
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre bordado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_collares/collar_especial.png"
+                            alt="collarEspecial">
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="card-text text-center pt-3 pb-3">
+                    <a id="aCollaresCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
+                        onclick="closeSection('secCollares')">Regresar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLAQUITAS -->
+    <section id="secPlaquitas" data-rv-view="14" style="display: none;">
+        <div class="productSection">
+            <div class="text-center pt-5 pb-3">
+                <h2 id="hProductoMicatalogo" class="text-white fw-bold">PLAQUITAS</h2>
+            </div>
+            <!-- CARD Section -->
+            <div class="container pb-3">
+                <!-- Hero Image Section -->
+                <div class="row">
+                    <div class="card col-sm">
+                        <img class="card-img" src="./images/productos/nuestras_plaquitas/medirScreen.png"
+                            alt="hero_picture">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description Section -->
+            <div class="container">
+                <!-- First Section Card -->
+                <div class="row text-center">
+                    <!-- Plaquita Mini -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title ">
+                            Plaquita Mini
+                        </h2>
+                        <div class="card-text">
+                            <p>1/2 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre Sublimado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaMini">
+                    </div>
+
+                    <!-- Plaquita Mediana -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title">
+                            Plaquita Mediana
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre Sublimado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaMediana">
+                    </div>
+
+                    <!-- Plaquita Jumbo  -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title">
+                            Plaquita Jumbo
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1.5 pulgadas de ancho</p>
+                            <p>1.20m de longitud</p>
+                            <p>Nombre Sublimado</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaJumbo">
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="card-text text-center pt-3 pb-3">
+                    <a id="aPlaquitasCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
+                        onclick="closeSection('secPlaquitas')">Regresar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAMPERS REUSABLES -->
+    <section id="secPampers" data-rv-view="14" style="display: none;">
+        <div class="productSection">
+            <div class="text-center pt-5 pb-3">
+                <h2 id="hProductoMicatalogo" class="text-white fw-bold">PAÑALES REUSABLES</h2>
+            </div>
+
+            <!-- CARD Section -->
+            <div class="container pb-3">
+                <!-- Hero Image Section -->
+                <div class="row">
+                    <div class="card col-sm">
+                        <img class="card-img" src="./images/productos/nuestros_pampers/hero_picture.png"
+                            alt="hero_picture">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description Section -->
+            <div class="container">
+                <!-- First Section Card -->
+                <div class="row text-center pb-1">
+                    <!-- PARA HEMBRAS -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title ">
+                            PARA HEMBRAS
+                        </h2>
+                        <div class="card-text">
+                            <p>1/2 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_pampers/pamper_bebas.png"
+                            alt="pampersBeba">
+                    </div>
+                    <!-- PARA MACHOS -->
+                    <div class="card col-sm">
+                        <h2 class="card-title">
+                            PARA MACHOS
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>1 pulgada de ancho</p>
+                            <p>1.20m de longitud</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/nuestros_pampers/pamper_bebos.png"
+                            alt="pampersBebos">
+                    </div>
+                </div>
+                <!-- Second Section Card -->
+                <div class="card col-sm text-center">
+                    <h2 class="card-title">
+                        PREGUNTA POR DISPONIBILIDAD DE DISEÑOS
+                    </h2>
+                    <p class="card-footer text-center">
+                        *Los pampers son de tela, con forro impermeable y con cierre de velcro.
+                        Se pueden lavar en lavadora y secadora. Se recomienda lavarlos antes de usarlos por primera vez.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="card-text text-center pt-3 pb-3">
+                <a id="aPampersCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
+                    onclick="closeSection('secPampers')">Regresar</a>
+            </div>
+    </section>
 
     <!-- CINTURONES Y CORREAS -->
     <section id="secCinturones" data-rv-view="14" style="display: none;">
@@ -222,12 +476,128 @@
         </div>
     </section>
 
+    <!-- CUIDADO DE MI MASCOTA -->
+    <section id="secCuidado" class="productSection" data-rv-view="14" style="display: none;">
+        <div>
+            <div class="text-center pt-5 pb-3">
+                <h2 id="hProductoMicatalogo" class="text-white fw-bold">CUIDADO DE MI MASCOTA</h2>
+            </div>
+        </div>
+
+        <!-- CARD Section -->
+        <div class="container pb-3">
+            <div class="row text-center">
+                <div class="card col-sm">
+                    <p class="card-text fa-2x">
+                        Estamos trabajando en esta sección, pronto tendremos más productos para ti.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KITS PARA MI MASCOTA -->
+    <section class="productSection" id="secKits" data-rv-review="14" style="display: none;">
+        <div>
+            <div class="text-center pt-5 pb-5">
+                <h2 id="hProductoMicatalogo" class="text-white fw-bold">KITS PARA MI MASCOTA</h2>
+            </div>
+        </div>
+
+        <!-- CARD Section -->
+        <div class="container pb-3">
+            <div class="row text-center">
+                <!-- KIT ID -->
+                <div class="card col-sm me-2 pb-2">
+                    <h2 class="card-title">
+                        KIT DE ID (Collar + Plaquita)
+                    </h2>
+                    <div class="card-text">
+                        <p>Slim</p>
+                        <p>Normal</p>
+                        <p>Ancho</p>
+                        <p>Temporada</p>
+                        <p>Especial</p>
+                    </div>
+                    <img class="card-img" src="./images/productos/nuestos_kits/kit_id.png" alt="hero_picture"
+                        style="width: 100%; height: 100%;">
+                </div>
+                <!-- KIT PASEO -->
+                <div class="card col-sm me-2 pb-2">
+                    <h2 class="card-title">
+                        KIT PASEO
+                    </h2>
+                    <div class="card-text">
+                        <p>Slim</p>
+                        <p>Normal</p>
+                        <p>Ancho</p>
+                        <p>Temporada</p>
+                        <p>Especial</p>
+                    </div>
+                    <img class="card-img" src="./images/productos/nuestos_kits/kit_paseo.png" alt="hero_picture"
+                        style="width: 100%; height: 100%;">
+                </div>
+                <!-- KIT MIPEKICHA -->
+                <div class="card col-sm me-2 pb-2">
+                    <h2 class="card-text">
+                        KIT MIPEKICHA
+                    </h2>
+                    <div class="card-text">
+                        <p>Slim</p>
+                        <p>Normal</p>
+                        <p>Ancho</p>
+                        <p>Temporada</p>
+                        <p>Especial</p>
+                    </div>
+                    <img class="card-img" src="./images/productos/nuestos_kits/kit_mipekicha.png" alt="hero_picture"
+                        style="width: 100%; height: 100%;">
+                </div>
+                <!-- KIT PLUS -->
+                <div class="card col-sm me-2 pb-2">
+                    <h2 class="card-title">
+                        KIT PLUS
+                    </h2>
+                    <div class="card-text">
+                        <p>Slim</p>
+                        <p>Normal</p>
+                        <p>Ancho</p>
+                        <p>Temporada</p>
+                        <p>Especial</p>
+                    </div>
+                    <img class="card-img" src="./images/productos/nuestos_kits/kit_plus.png" alt="hero_picture"
+                        style="width: 100%; height: 100%;">
+                </div>
+                <!-- KIT CUIDADO -->
+                <div class="card col-sm pb-2">
+                    <h2 class="card-title">
+                        KIT CUIDADO
+                    </h2>
+                    <div class="card-text">
+                        <p>Slim</p>
+                        <p>Normal</p>
+                        <p>Ancho</p>
+                        <p>Temporada</p>
+                        <p>Especial</p>
+                    </div>
+                    <img class="card-img" src="./images/productos/nuestos_kits/kit_cuidado.png" alt="hero_picture"
+                        style="width: 100%; height: 100%;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="card-text text-center pt-3 pb-3">
+            <a id="aCinturonesCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
+                onclick="closeSection('secKits')">Regresar</a>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer id="fFooter" class="bg-dark text-center text-white">
         <div>
             <div style="padding-top: 36px; padding-bottom: 36px;">
                 <!-- Media Links -->
-                <div class="row text-center">
+                <div class="text-center">
                     <div class="social-links m-1">
                         <a class="m-1" href="https://www.facebook.com/mipekicha/" target="_blank"
                             style="color:#529e91"><i class="fab fa-facebook-f fa-2x"></i></a>
@@ -240,11 +610,14 @@
                     </div>
                 </div>
                 <!-- Sub Menu -->
-                <span class="mpk_link_color"><a href="#">Tienda</a> | <a href="./productos.html">Productos</a> | <a
-                        href="./nosotros.html">¿Quienes
-                        Somos?</a> |
-                    <a href="#">Testimonios</a> | <a href="./contacto.html">Contacto</a> | <a
-                        href="./embajadores.html">Embajadores</a></span>
+                <span class="mpk_link_color">
+                    <a href="#">Tienda</a> |
+                    <a href="./productos.html">Productos</a> |
+                    <a href="./nosotros.html">¿Quienes Somos?</a> |
+                    <a href="#">Testimonios</a> |
+                    <a href="./contacto.html">Contacto</a> |
+                    <a href="./embajadores.html">Embajadores</a>
+                </span>
                 <p id="pFooterCopy" class="mpk_textColor">Copyright (c) 2019 MIPEKICHA. Calle Gladiola # 106, Fracc.
                     Jardines de Durango, Dgo, MX. CP.34200</p>
                 <p class="mpk_link_color">
