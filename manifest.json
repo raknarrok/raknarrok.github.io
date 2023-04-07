@@ -1,0 +1,59 @@
+{
+    "name": "#Mipekicha",
+    "short_name": "#Mipekicha",
+    "description": "Los mejores productos para tu mascota. Correas, Plaquitas, Collares, Cintos personalizados, aromaterapia y mucho mas.",
+    "background_color": "#57a397",
+    "theme_color": "#57a397",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "./?utm_soruce=web_app_manifest",
+    "scope": "./",
+    "lang": "es-MX",
+    "icons":[
+        {
+        "src": "./images/logo_size/mipekicha_logox1024.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/logo_size/mipekicha_logox32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
