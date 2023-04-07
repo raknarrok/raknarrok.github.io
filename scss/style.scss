@@ -126,7 +126,7 @@ $borderHoverColor: rgb(176, 231, 204);
     margin: 0 2px 10px 0;
     color: $txtColor;
     background-color: $bgColor;
-    border-radius: 20% / 50%;
+    border-radius: 12px;
     padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
     border-style: solid;
     border-color: $borderColor;
@@ -327,4 +327,4 @@ Animation Section
     .frame_responsive {
         width: 100%;
     }
-}
+} 
