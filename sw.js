@@ -12,7 +12,13 @@ urlsToCache = [
     './css/webfonts/fa-v4compatibility.ttf',
     './css/webfonts/fa-v4compatibility.woff2',
     './scss/style.scss',
-    './scripts/utility.js'
+    './scripts/utility.js',
+    'https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js',
+    'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0',
+    'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v4.0',
+    'https://unpkg.com/aos@2.3.1/dist/aos.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js'
+
 ]
 
 // Add to Cache all the static files
