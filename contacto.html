@@ -83,7 +83,7 @@
                 </p>
                 <p class="card-text text-center mpk_link_color">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:mipregunta@mipekicha.com">mipregunta@mipekicha.com</a>
+                    <a href="mailto:mipregunta@mipekicha.com?&subject=Quiero%20ser%20un%20embajador">mipregunta@mipekicha.com</a>
                 </p>
                 <p class="card-text text-center mpk_link_color">
                     <i class="fas fa-envelope"></i>
@@ -96,16 +96,16 @@
     <div class="heroContactoScreen">
         <section class="container">
             <!-- Form Section -->
-            <div class="col-sm text-white fadeInDown">
-                <div class="">
+            <form class="col-sm text-white fadeInDown">
+                <div class="group">
                     <div class="row">
                         <div class="col-sm">
                             <label for="inputName" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="inputName">
+                            <input type="text" class="form-control" id="inputName" required />
                         </div>
                         <div class="col-sm">
                             <label for="inputLastName" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="inputLastName">
+                            <input type="text" class="form-control" id="inputLastName" required />
                         </div>
                         <div class="col-md-6">
                             <label for="inputEmail" class="form-label">Correo Electrónico</label>
@@ -115,18 +115,18 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label for="inputPhone" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="inputPhone">
+                            <input type="text" class="form-control" id="inputPhone" required />
                         </div>
                         <div class="col-12">
                             <label for="inputMessage" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                            <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
                         </div>
                         <div class="col-12 pt-3 pb-5">
-                            <button type="submit" class="btn mpk_button">Enviar</button>
+                            <button type="submit" class="btn mpk_button" href="mailto:mipregunta@mipekicha.com&subject=Quiero%20ser%20%Embajador">Enviar</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
     </div>
 
@@ -160,6 +160,9 @@
                 <p class="mpk_link_color">
                     <a id="aFooterTerms" class="mbr-footer__link text-mipekicha" href="#">Terms of Use</a> |
                     <a id="aFooterPrivacy" class="mbr-footer__link text-mipekicha" href="#">Privacy Policy</a>
+                </p>
+                <p class="mpk_link_color">
+                    <a id="aFooterPawprint" class="mbr-footer_link text-mipekicha" href="#">Created By Mipekicha Digital <i class="fa-solid fa-paw"></i></a>
                 </p>
             </div>
         </div>
