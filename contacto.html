@@ -30,8 +30,9 @@
                         <img id="imgMainLogo" src="./images/mipekicha_logo_mini.png" alt="Logo">
                         M I P E K I C H A
                     </a>
-                    <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -83,7 +84,8 @@
                 </p>
                 <p class="card-text text-center mpk_link_color">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:mipregunta@mipekicha.com?&subject=Quiero%20ser%20un%20embajador">mipregunta@mipekicha.com</a>
+                    <a
+                        href="mailto:mipregunta@mipekicha.com?&subject=Quiero%20ser%20un%20embajador">mipregunta@mipekicha.com</a>
                 </p>
                 <p class="card-text text-center mpk_link_color">
                     <i class="fas fa-envelope"></i>
@@ -96,33 +98,38 @@
     <div class="heroContactoScreen">
         <section class="container">
             <!-- Form Section -->
-            <form class="col-sm text-white fadeInDown">
+            <form class="col-sm text-white fadeInDown" id="contactform"
+                action="https://formsubmit.io/send/31909461-65bc-45b4-8a32-b49f206bc643">
+                <input name="_redirect" type="hidden" id="name" value="./thanks.html">
+                <input name="_formsubmit_id" type="text" style="display:none">
                 <div class="group">
                     <div class="row">
                         <div class="col-sm">
                             <label for="inputName" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="inputName" required />
+                            <input type="text" name="name" class="form-control" id="inputFirstName" placeholder="Agrega tu Nombre"
+                            required />
                         </div>
                         <div class="col-sm">
                             <label for="inputLastName" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="inputLastName" required />
+                            <input type="text" name="lastName" class="form-control" id="inputLastName" placeholder="Agrega tu Apellido"
+                            required />
                         </div>
                         <div class="col-md-6">
                             <label for="inputEmail" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="inputEmail">
+                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Agrega tu Correo" />                            
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <label for="inputPhone" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="inputPhone" required />
+                            <input type="phone" name="phone" class="form-control" id="inputPhone" required />
                         </div>
                         <div class="col-12">
                             <label for="inputMessage" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+                            <textarea class="form-control" name="message" id="inputMessage" rows="3" required></textarea>
                         </div>
                         <div class="col-12 pt-3 pb-5">
-                            <button type="submit" class="btn mpk_button" href="mailto:mipregunta@mipekicha.com&subject=Quiero%20ser%20%Embajador">Enviar</button>
+                            <button type="submit" class="btn mpk_button">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +169,8 @@
                     <a id="aFooterPrivacy" class="mbr-footer__link text-mipekicha" href="#">Privacy Policy</a>
                 </p>
                 <p class="mpk_link_color">
-                    <a id="aFooterPawprint" class="mbr-footer_link text-mipekicha" href="#">Created By Mipekicha Digital <i class="fa-solid fa-paw"></i></a>
+                    <a id="aFooterPawprint" class="mbr-footer_link text-mipekicha" href="#">Created By Mipekicha Digital
+                        <i class="fa-solid fa-paw"></i></a>
                 </p>
             </div>
         </div>
