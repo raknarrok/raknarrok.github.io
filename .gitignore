@@ -1,0 +1,12 @@
+#Ignore Node Modules
+node_modules
+
+#Ignore mockups
+mockups
+
+#Ignore package-lock.json and package.json
+package-lock.json
+package.json
+
+#Ignore vscode
+.vscode

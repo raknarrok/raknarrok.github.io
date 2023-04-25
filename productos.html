@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/fontawesome/all.css">
     <title>Mipekicha - Productos</title>
 </head>
@@ -25,14 +26,15 @@
     <!-- Menu Section -->
     <section id="sMenu">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <nav id="navMenu" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img id="imgMainLogo" src="./images/mipekicha_logo_mini.png" alt="Logo">
                         M I P E K I C H A
                     </a>
-                    <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -87,8 +89,8 @@
         <h2 class="text-center fw-bold pt-3">MIS PRODUCTOS</h2>
         <p class="text-center card-text">
             Puedes encontrar desde collares hasta plaquita, y
-                    todas las puedes personalizar a tu gusto, tenemos muchísimas combinaciones de colores. Ve algunos
-                    ejemplos en esta sección y elige el que te guste.
+            todas las puedes personalizar a tu gusto, tenemos muchísimas combinaciones de colores. Ve algunos
+            ejemplos en esta sección y elige el que te guste.
         </p>
         <section id="secMicatalogo" class="container">
             <!-- First Section -->
@@ -165,7 +167,7 @@
     <section id="secCollares" data-rv-view="14" style="display: none;">
         <div class="productSection">
             <div class="text-center pt-5 pb-3">
-                <h2 id="hProductoMicatalogo" class="text-white fw-bold">COLLARES</h2>
+                <h2 class="text-white fw-bold fs-1">NUESTROS COLLARES</h2>
             </div>
             <!-- CARD Section -->
             <div class="container pb-3">
@@ -188,9 +190,11 @@
                             Collar Slim
                         </h2>
                         <div class="card-text">
-                            <p>1/2 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre bordado</p>
+                            <p>½ pulgada de ancho Nombre y 1 numero de tel bordado</p>
+                            <p>XS 16 a 22 cm</p>
+                            <p>S 20 a 31 cm</p>
+                            <p>M 25 a 42 cm</p>
+                            <p>G 39 a 61 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_collares/collar_slim.png"
                             alt="collarSlim">
@@ -202,9 +206,10 @@
                             Collar Normal
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre bordado</p>
+                            <p>1 pulgada de ancho Nombre y 1 numero tel bordado</p>
+                            <p>S 20 a 31 cm</p>
+                            <p>M 25 a 42 cm</p>
+                            <p>G 39 a 61 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_collares/collar_normal.png"
                             alt="collarNormal">
@@ -216,9 +221,10 @@
                             Collar Ancho
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1.5 pulgadas de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre bordado</p>
+                            <p>1 ½ pulgada de ancho Nombre y 1 numero tel bordado</p>
+                            <p>M 25 a 42 cm</p>
+                            <p>G 39 a 61 cm</p>
+                            <p>XG 45 a 71 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_collares/collar_ancho.png"
                             alt="collarAncho">
@@ -230,9 +236,10 @@
                             Collar Coleccion Temporal
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre bordado</p>
+                            <p>1 pulgada de ancho Nombre y 1 numero tel bordado</p>
+                            <p>S 20 a 31 cm</p>
+                            <p>M 25 a 42 cm</p>
+                            <p>G 39 a 61 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_collares/collar_temporal.png"
                             alt="collarTemporal">
@@ -244,9 +251,9 @@
                             Collar Especial
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre bordado</p>
+                            <p>Ancho a tu elección</p>
+                            <p>Se hace a la medida, es ajustable y puedes bordar los datos que tu desees con diferentes
+                                tipos de fuente</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_collares/collar_especial.png"
                             alt="collarEspecial">
@@ -266,7 +273,7 @@
     <section id="secPlaquitas" data-rv-view="14" style="display: none;">
         <div class="productSection">
             <div class="text-center pt-5 pb-3">
-                <h2 id="hProductoMicatalogo" class="text-white fw-bold">PLAQUITAS</h2>
+                <h2 class="text-white fw-bold">PLAQUITAS</h2>
             </div>
             <!-- CARD Section -->
             <div class="container pb-3">
@@ -283,41 +290,49 @@
             <div class="container">
                 <!-- First Section Card -->
                 <div class="row text-center">
-                    <!-- Plaquita Mini -->
+                    <!-- Plaquita Hueso -->
                     <div class="card col-sm me-1">
                         <h2 class="card-title ">
-                            Plaquita Mini
+                            PLAQUITA HUESO
                         </h2>
                         <div class="card-text">
-                            <p>1/2 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre Sublimado</p>
+                            <p>Huesito mini 2.5 cm</p>
+                            <p>Huesito chico 3.5cm</p>
+                            <p>Huesito grande 4.5cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaMini">
                     </div>
 
-                    <!-- Plaquita Mediana -->
+                    <!-- Plaquita Circulo -->
                     <div class="card col-sm me-1">
                         <h2 class="card-title">
-                            Plaquita Mediana
+                            PLAQUITA CIRCULO
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre Sublimado</p>
+                            <p>Circulo mini 2.5 cm</p>
+                            <p>Circulo chico 3.5cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaMediana">
                     </div>
 
-                    <!-- Plaquita Jumbo  -->
+                    <!-- Plaquita Extra  -->
                     <div class="card col-sm me-1">
                         <h2 class="card-title">
-                            Plaquita Jumbo
+                            EXTRA
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1.5 pulgadas de ancho</p>
-                            <p>1.20m de longitud</p>
-                            <p>Nombre Sublimado</p>
+                            <p>AGREGA SU FOTO POR $10 EXTRAS</p>
+                        </div>
+                        <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaJumbo">
+                    </div>
+
+                    <!-- Plaquita IFA  -->
+                    <div class="card col-sm me-1">
+                        <h2 class="card-title">
+                            IFA
+                        </h2>
+                        <div class="card-text pt-3">
+                            <p>Rectángulo 4 x2.5 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/default_picture.png" alt="plaquitaJumbo">
                     </div>
@@ -336,7 +351,7 @@
     <section id="secPampers" data-rv-view="14" style="display: none;">
         <div class="productSection">
             <div class="text-center pt-5 pb-3">
-                <h2 id="hProductoMicatalogo" class="text-white fw-bold">PAÑALES REUSABLES</h2>
+                <h2 class="text-white fw-bold">PAÑALES REUSABLES</h2>
             </div>
 
             <!-- CARD Section -->
@@ -360,8 +375,11 @@
                             PARA HEMBRAS
                         </h2>
                         <div class="card-text">
-                            <p>1/2 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
+                            <p>XS Cintura 24 a 30 cm</p>
+                            <p>S Cintura 25 a 40 cm</p>
+                            <p>M Cintura 35 a 50 cm</p>
+                            <p>G Cintura 48 a 69 cm</p>
+                            <p>XG Cintura 65 a 90 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_pampers/pamper_bebas.png"
                             alt="pampersBeba">
@@ -372,8 +390,11 @@
                             PARA MACHOS
                         </h2>
                         <div class="card-text pt-3">
-                            <p>1 pulgada de ancho</p>
-                            <p>1.20m de longitud</p>
+                            <p>XS Cintura 24 a 30 cm</p>
+                            <p>S Cintura 25 a 40 cm</p>
+                            <p>M Cintura 35 a 50 cm</p>
+                            <p>G Cintura 48 a 69 cm</p>
+                            <p>XG Cintura 65 a 90 cm</p>
                         </div>
                         <img class="card-img" src="./images/productos/nuestros_pampers/pamper_bebos.png"
                             alt="pampersBebos">
@@ -402,7 +423,7 @@
     <section id="secCinturones" data-rv-view="14" style="display: none;">
         <div class="productSection">
             <div class="text-center pt-5 pb-3">
-                <h2 id="hProductoMicatalogo" class="text-white fw-bold">CINTURONES Y CORREAS</h2>
+                <h2 class="text-white fw-bold">CINTURONES Y CORREAS</h2>
             </div>
 
             <!-- CARD Section -->
@@ -482,25 +503,85 @@
     </section>
 
     <!-- CUIDADO DE MI MASCOTA -->
-    <section id="secCuidado" class="productSection" data-rv-view="14" style="display: none;">
-        <div>
-            <div class="text-center pt-5 pb-3">
-                <h2 id="hProductoMicatalogo" class="text-white fw-bold">CUIDADO DE MI MASCOTA</h2>
+    <section id="secCuidado" data-rv-view="14" style="display: none;">
+        <div class="productSection">
+            <div class="text-center pt-5 pb-3 text-white">
+                <h2 class="fw-bold">CUIDADO DE MI MASCOTA</h2>
+                <h3 class="fs-1">¿Que es la Terapia Floral Veterinaria?</h3>
+                <p class="fs-2">
+                    Se engloba dentro de las medicinas alternativas reconocidas por la OMS
+                    Se busca lograr el <strong style="color: aquamarine">equilibrio emocional</strong> para disminuir
+                    emociones como miedo, angustia o pánico.
+                    Su uso puede ser oral o por medio de aromaterapia
+                    Se puede usar en perro, gato, hurón o conejos.
+                </p>
             </div>
-        </div>
+            <!-- CARD SECTION -->
+            <!-- CARD SECTION -->
+            <div class="container pb-3 fs-4">
+                <div class="row text-white">
+                    <div class="btn mpk_button text-uppercase fs-4" onclick="fnShowHide('divAromaterapia')">
+                        Aromaterapia
+                    </div>
+                    <div id="divAromaterapia" style="display:none;">
+                        <p class="pt-2"><span class="fw-bold">DULCES SUEÑOS</span> (SPRAY 60 mL) Auxiliar en el
+                            tratamiento de
+                            insomnio e hiperactividad nocturna.
+                            Terapia Floral, aceites esenciales de lavanda y rosas</p>
+                    </div>
+                    <div class="btn mpk_button text-uppercase fs-4" onclick="fnShowHide('divFloresBach')">
+                        Flores de Bach
+                    </div>
+                    <div id="divFloresBach" style="display: none;">
+                        <p class="pt-2"><span class="fw-bold">PÁNICO</span> (GOTAS 30 mL) Ideal para los casos de fobias
+                            a la pirotecnia y/o a las
+                            tormentas. Flores de bach: Mimulus, Aspen, Star of Bethelem, Rock Rose, Larch
+                        </p>
+                        <p><span class="fw-bold">ANSIEDAD</span> (GOTAS 30 mL) Auxiliar en el tratamiento
+                            de hiperapego, ansiedad por separación, destrucción de cosas por ansiedad. Flores de bach:
+                            Impatients, Clematis, Rock Rose, Cherry Plum, Star of Bethelem
 
-        <!-- CARD Section -->
-        <div class="container pb-3">
-            <div class="row text-center">
-                <div class="card col-sm">
-                    <p class="card-text fa-2x">
-                        Estamos trabajando en esta sección, pronto tendremos más productos para ti.
-                    </p>
+                        </p>
+                    </div>
+                    <div class="btn mpk_button text-uppercase fs-4" onclick="fnShowHide('divHomeopatia')">
+                        Homeopatía
+                    </div>
+                    <div id="divHomeopatia" style="display: none;">
+                        <p class="pt-2"><span class="fw-bold">CALMIDOL</span> ( GOTAS 30 mL) Acción sobre el sistema
+                            articular. Indicado en afecciones traumáticas, fatiga muscular, episodios de excesos
+                            musculares, enfriamientos por humedad o después de haberse mojado, dolores reumáticos,
+                            neurálgicas dentales, esguinces. Rhus Tox, árnica y Rhododendron
+                        </p>
+                        <p><span class="fw-bold">SIN ALERGIAS</span> (GOTAS 30 mL) Estimula el sistema inmune. Además,
+                            permite luchar contra una predisposición a la faringoamigdalitis. Está indicado en: Alergias
+                            , afecciones en piel y Alergias sistema respiratorio. Psorinum Nosode
+                        </p>
+                        <p><span class="fw-bold">PULMÓN FELIZ</span> (GOTAS 30 ml) Refuerza vías respiratorias. Útil
+                            para mascotas con pulmones débiles Está indicado en: Mascotas propensas a Pulmonías y
+                            propensas a infecciones respiratorias. Pulmón 7H, organoterápico
+                        </p>
+                    </div>
+                    <div class="btn mpk_button text-uppercase fs-4" onclick="fnShowHide('divPomada')">
+                        POMADA
+                    </div>
+                    <div id="divPomada" style="display: none;">
+                        <p class="pt-2"><span class="fw-bold">HAPPY PAWS</span> (BÁLSAMO 20 gr) Bálsamo fabricado con
+                            productos naturales para humectar y dar brillo las patitas de la mascota. Tepezcohuite con
+                            caléndula
+                        </p>
+                    </div>
                 </div>
-                <div class="card-text text-center pt-3">
-                    <a id="aCuidadoCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
-                        onclick="closeSection('secCuidado')">Regresar</a>
-                </div>
+            </div>
+
+            <!-- Button Section -->
+            <div class="card-text text-center pt-3">
+                <!-- <a id="aNavComprar" class="mbr-buttons__btn btn btn-danger rounded-pill"
+                    href="index.html#sectionCotikicha"
+                    onclick="fnShowCotizar('sectionBCotikicha','sectionCotikicha')">COMPRAR</a> -->
+            </div>
+            <div class="card-text text-center pt-3 pb-3">
+                <a id="aCuidadoCerrar" class="btn btn-danger rounded-pill" href="productos.html#dFirstSection"
+                    onclick="closeSection('secCuidado')">Regresar</a>
             </div>
         </div>
     </section>
@@ -509,7 +590,7 @@
     <section class="productSection" id="secKits" data-rv-review="14" style="display: none;">
         <div>
             <div class="text-center pt-5 pb-5">
-                <h2 id="hProductoMicatalogo" class="text-white fw-bold">KITS PARA MI MASCOTA</h2>
+                <h2 class="text-white fw-bold">KITS PARA MI MASCOTA</h2>
             </div>
         </div>
 
@@ -519,9 +600,10 @@
                 <!-- KIT ID -->
                 <div class="card col-sm me-2 pb-2">
                     <h2 class="card-title">
-                        KIT DE ID (Collar + Plaquita)
+                        KIT DE ID
                     </h2>
                     <div class="card-text">
+                        <p>Collar + Plaquita</p>
                         <p>Slim</p>
                         <p>Normal</p>
                         <p>Ancho</p>
@@ -537,6 +619,7 @@
                         KIT PASEO
                     </h2>
                     <div class="card-text">
+                        <p>Collar + Correa</p>
                         <p>Slim</p>
                         <p>Normal</p>
                         <p>Ancho</p>
@@ -552,6 +635,7 @@
                         KIT MIPEKICHA
                     </h2>
                     <div class="card-text">
+                        <p>Collar + Correa + Plaquita</p>
                         <p>Slim</p>
                         <p>Normal</p>
                         <p>Ancho</p>
@@ -567,6 +651,7 @@
                         KIT PLUS
                     </h2>
                     <div class="card-text">
+                        <p>Collar + Correa+ Cinturón para carro</p>
                         <p>Slim</p>
                         <p>Normal</p>
                         <p>Ancho</p>
@@ -582,6 +667,7 @@
                         KIT CUIDADO
                     </h2>
                     <div class="card-text">
+                        <p>Collar + Correa + Flores de Bach</p>
                         <p>Slim</p>
                         <p>Normal</p>
                         <p>Ancho</p>
@@ -630,11 +716,11 @@
                 <p id="pFooterCopy" class="mpk_textColor">Copyright (c) 2019 MIPEKICHA. Calle Gladiola # 106, Fracc.
                     Jardines de Durango, Dgo, MX. CP.34200</p>
                 <p class="mpk_link_color">
-                    <a id="aFooterTerms" class="mbr-footer__link text-mipekicha" href="#">Terms of Use</a> |
-                    <a id="aFooterPrivacy" class="mbr-footer__link text-mipekicha" href="#">Privacy Policy</a>
+                    <a id="aFooterTerms" class="mbr-footer__link text-mipekicha" href="./terminos.html">Terms of Use | Privacy Policy</a>
                 </p>
                 <p class="mpk_link_color">
-                    <a id="aFooterPawprint" class="mbr-footer_link text-mipekicha" href="#">Created By Mipekicha Digital <i class="fa-solid fa-paw"></i></a>
+                    <a id="aFooterPawprint" class="mbr-footer_link text-mipekicha" href="#">Created By Mipekicha Digital
+                        <i class="fa-solid fa-paw"></i></a>
                 </p>
             </div>
         </div>

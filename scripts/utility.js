@@ -8,7 +8,7 @@
  */
 
 function showSection(idSection) {
-    $(`#${idSection}`).css('display', 'block');
+    $(`#${idSection}`).css(`display`, `block`);
 }
 
 /**
@@ -19,7 +19,7 @@ function showSection(idSection) {
  */
 
 function closeSection(idSection) {
-    $(`#${idSection}`).css('display', 'none');
+    $(`#${idSection}`).css(`display`, `none`);
 }
 
 /**
@@ -31,20 +31,35 @@ function closeSection(idSection) {
 
 // Catch Element Scroll Event
 $(document).ready(function () {
-    $(window).bind('scroll', function () {
+    $(window).bind(`scroll`, function () {
 
         // Variable Declaration & Definition
-        var gab = 50;
+        let gab = 50;
 
         // Conditional Statement
         if ($(window).scrollTop() > gab) {
-            $("#imgMainLogo").addClass("sizeController");
+            $(`#imgMainLogo`).addClass(`sizeController`);
+            $(`#navMenu`).addClass(`opacity-75`);
         }
         else {
-            $("#imgMainLogo").removeClass("sizeController");
+            $(`#imgMainLogo`).removeClass(`sizeController`);
+            $(`#navMenu`).removeClass(`opacity-75`);
         }
     })
 })
+
+/*
+   *@Name fnShowHide
+   *@Summary This method show or hide the section according the button selected. 
+             Works According the section ID displayed in index.php
+   *@Author Luis Fernandez 
+   *@param strIDButtons, strIDPedidos
+*/
+function fnShowHide(secId) {
+
+    //Start flow to display and set data
+    document.getElementById(secId).style.getPropertyValue('display') === 'none' ? document.getElementById(secId).style.display = 'block' : document.getElementById(secId).style.display = 'none';
+}
 
 /**
  * @name facebookScriptHandler
@@ -55,7 +70,7 @@ $(document).ready(function () {
 window.fbAsyncInit = function () {
     FB.init({
         xfbml: true,
-        version: 'v6.0'
+        version: `v6.0`
     });
 };
 
@@ -63,6 +78,6 @@ window.fbAsyncInit = function () {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+    js.src = `https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js`;
     fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+}(document, `script`, `facebook-jssdk`));
