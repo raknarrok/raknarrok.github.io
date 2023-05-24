@@ -22,27 +22,24 @@
 </head>
 
 <body>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="1"
-aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Collar Especial Cenicienta</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <img src="../images/productos/nuestros_collares/collar_especial.png" alt="Cenicienta">
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary"
-                data-bs-dismiss="modal">Close</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Collar Especial Cenicienta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../images/productos/nuestros_collares/collar_especial.png" alt="Cenicienta">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
     <!-- Menu Section -->
     <nav id="navMenu" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -91,80 +88,23 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
     </nav>
 
     <!-- Main Section -->
-    <main class="heroWorkingScreen">
-        <section class="container">
-            <div class="row cotikicha">
-                <!-- PRODUCTS Sections -->
-                <div class="card col-sm fadeInDown">
-                    <div class="fs-5">
-                        <!-- COLLARES Section -->
-                        <div class="col-sm">
-                            <b class="card-title">COLLARES</b>
-                            <!-- CSlim Button -->
-                            <div>
-                                <button type="button" id="btnCSlim" value="divCSlim"
-                                    onclick="fnShowHide(this.value);">SLIM</button>
-                                <div id="divCSlim">
-                                    Cenicienta <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">Ver</button>
-                                </div>
-                            </div>
-                            <!-- CNormal Button -->
-                            <div>
-                                <button type="button" id="btnCNormal" value="divCNormal"
-                                    onclick="fnShowHide(this.value);">NORMAL</button>
-                                <div id="divCNormal">
-                                    holi Normal
-                                </div>
-                            </div>
-                            <!-- CAncho Button -->
-                            <div>
-                                <button type="button" id="btnCAncho" value="divCAncho"
-                                    onclick="fnShowHide(this.value);">ANCHO</button>
-                                <div id="divCAncho">
-                                    holi Ancho
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm fadeInDown">
-                    <div class="fs-5">
-                        <!-- CORREAS Section -->
-                        <div class="col-sm">
-                            <b class="card-title">CORREAS</b>
-                            <p class="card-text">One</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm fadeInDown">
-                    <div class="fs-5">
-                        <!-- CINTOS Section -->
-                        <div class="col-sm">
-                            <b class="card-title">CINTOS DE SEGURIDAD</b>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm fadeInDown">
-                    <div class="fs-5">
-                        <!-- PLAQUITAS Section -->
-                        <div class="col-sm">
-                            <b class="card-title">PLAQUITAS</b>
-                            <p class="card-text">One</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-sm fadeInDown">
-                    <div class="fs-5">
-                        <!-- FLORES Section -->
-                        <div class="col-sm">
-                            <b class="card-title">FLORES BACH</b>
-                            <p class="card-text">One</p>
-                        </div>
-                    </div>
+    <main class="mainInfo">
+        <!-- Main Section (Legacy) -->
+        <div style="background-color: rgba(233, 233, 233, 0.603);">
+            <div class="row m-auto cotikicha container">
+                <div class="col-sm text-center">
+                    <h1 class="card-title fs-1 text-uppercase fadeInDown fw-bold">
+                        COTIKICHA TU PEDIDO!!
+                    </h1>
+                    <p class="card-text fs-3 fadeInDown">
+                        Cotiza tu pedido
+                    </p>
+                    <section id="secCotikicha" class="row">
+                        <!-- Fragments to be Added -->
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer Section -->
@@ -228,14 +168,8 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="../script.js"></script>
     <script src="../scripts/utility.js"></script>
-    <script>
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', () => {
-            myInput.focus()
-        })
-    </script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/objects.js"></script>
 </body>
 
 </html>

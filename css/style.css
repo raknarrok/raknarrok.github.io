@@ -227,7 +227,6 @@ a {
 }
 
 .cotikicha {
-  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -248,7 +247,9 @@ a {
   color: white;
   background-color: gray;
   border-color: rgb(176, 231, 204);
-  border-width: 5px;
+}
+.cotikicha .subButton {
+  background-color: #A0A0A0;
 }
 
 /**
@@ -365,17 +366,26 @@ Animation Section
   .frame_responsive {
     width: 500px;
   }
+  .cotikicha {
+    height: 150vh;
+  }
 }
 @media screen and (min-width: 573px) and (max-width: 1024px) {
   .frame_responsive {
     width: 100%;
     height: 100%;
   }
+  .cotikicha {
+    height: 150vh;
+  }
 }
 @media screen and (min-width: 1024px) {
   .frame_responsive {
     width: 100%;
     height: 100%;
+  }
+  .cotikicha {
+    height: 100vh;
   }
 }
 
