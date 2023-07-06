@@ -176,6 +176,82 @@ $borderHoverColor: rgb(176, 231, 204);
     }
 }
 
+.mpk_button_primary:enabled {
+    margin: 0 2px 10px 0;
+    color: $txtColor;
+    background-color: $bgColor;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
+    border-style: solid;
+    border-color: $borderColor;
+
+    &:hover {
+        color: $txtColor;
+        background-color: $bgHoverColor;
+        border-color: $borderHoverColor;
+        border-width: 5px;
+    }
+}
+
+.mpk_button_primary:disabled {
+    margin: 0 2px 10px 0;
+    color: $txtColor;
+    background-color: $primary_3;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
+    border-style: solid;
+    border-color: $borderColor;
+    opacity: 0.5;
+}
+
+.mpk_button_secondary:enabled {
+    margin: 0 2px 10px 0;
+    color: $txtColor;
+    background-color: $instagram_color;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
+    border-style: solid;
+    border-color: $borderColor;
+    &:hover {
+        color: $txtColor;
+        background-color: $bgHoverColor;
+        border-color: $borderHoverColor;
+        border-width: 5px;
+    }
+}
+
+.mpk_button_secondary:disabled {
+    margin: 0 2px 10px 0;
+    color: $txtColor;
+    background-color: $instagram_color;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
+    border-style: solid;
+    border-color: $borderColor;
+    opacity: 0.5;
+}
+
+.btnSection {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.mpk_button_close:enabled {
+    margin: 0 2px 10px 0;
+    color: $txtColor;
+    background-color: $primary_3;
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
+    border-style: solid;
+    border-color: $borderColor;
+    &:hover {
+        color: $txtColor;
+        background-color: $bgHoverColor;
+        border-color: $borderHoverColor;
+        border-width: 5px;
+    }
+}
+
 .btnSection {
     text-align: center;
     padding-bottom: 15px;
@@ -303,7 +379,7 @@ $borderHoverColor: rgb(176, 231, 204);
     display: flex;
     align-items: center;
 
-    img{
+    img {
         width: 200px;
         height: 200px;
         background-color: #000000;
@@ -312,6 +388,7 @@ $borderHoverColor: rgb(176, 231, 204);
 
 .cart {
     padding-right: 3em;
+
     button {
         // No styles
         background-color: transparent;
