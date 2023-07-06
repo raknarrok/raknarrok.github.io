@@ -153,6 +153,7 @@ a {
 // Variable declaration and validation
 $txtColor: white;
 $bgColor: #529e91;
+$bgColorSecondary: #A0A0A0;
 $borderColor: #acfa74;
 $bgHoverColor: gray;
 $borderHoverColor: rgb(176, 231, 204);
@@ -262,14 +263,14 @@ $borderHoverColor: rgb(176, 231, 204);
 
 .cotikicha {
 
-    height: 80vh;
+    // height: 150vh; // mobile
+    // height: 80vh; // Desktop
     display: flex;
     align-items: center;
 
     .card {
         background-color: transparent;
         border: none;
-        // padding-right: auto;
     }
 
     button {
@@ -285,8 +286,36 @@ $borderHoverColor: rgb(176, 231, 204);
             color: $txtColor;
             background-color: $bgHoverColor;
             border-color: $borderHoverColor;
-            border-width: 5px;
+            // border-width: 5px;
         }
+    }
+
+    .subButton {
+        background-color: $bgColorSecondary;
+    }
+}
+
+.mainInfo {
+    padding-top: 8em;
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+    }
+}
+
+.cart {
+    padding-right: 3em;
+    button {
+        // No styles
+        background-color: transparent;
+        border: none;
     }
 }
 
@@ -415,22 +444,37 @@ Animation Section
 }
 
 // Frame Adjust
+// Max Width Mobile
 @media screen and (min-width: 573px) {
     .frame_responsive {
         width: 500px;
     }
+
+    .cotikicha {
+        height: 150vh;
+    }
 }
 
+// Max Width Tablet
 @media screen and (min-width: 573px) and (max-width: 1024px) {
     .frame_responsive {
         width: 100%;
         height: 100%;
     }
+
+    .cotikicha {
+        height: 150vh;
+    }
 }
 
+// Max Width Desktop
 @media screen and (min-width: 1024px) {
     .frame_responsive {
         width: 100%;
         height: 100%;
+    }
+
+    .cotikicha {
+        height: 100vh;
     }
 }
