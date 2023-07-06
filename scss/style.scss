@@ -295,6 +295,30 @@ $borderHoverColor: rgb(176, 231, 204);
     }
 }
 
+.mainInfo {
+    padding-top: 8em;
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 200px;
+        height: 200px;
+        background-color: #000000;
+    }
+}
+
+.cart {
+    padding-right: 3em;
+    button {
+        // No styles
+        background-color: transparent;
+        border: none;
+    }
+}
+
 /**
 Animation Section
 */

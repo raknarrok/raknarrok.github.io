@@ -267,110 +267,56 @@ const buttonsBySections = {
 // Main Object Creation
 const addHeadersObject = document.getElementById('secCotikicha');
 
-// Create Child Element
-for (const section of sections) {
+function createButton(id, className, buttonText) {
+    const button = document.createElement("button"); // Button Created
+    button.setAttribute("id", id);
+    button.setAttribute("class", className);
+    button.textContent = buttonText;
+    return button;
+}
 
-    // Assign Element Type
+function createSection(section) {
     const tagMainDiv = document.createElement("div"); // Div Created
-
-    // Add Attributes & Values
     tagMainDiv.setAttribute("id", section.id);
     tagMainDiv.setAttribute("class", "col-sm");
 
-    // Assign Each Section to the Header Object
-    addHeadersObject.appendChild(tagMainDiv); // New Div Added without Elements
-
-    // Create Child Element Card Title
     const tagHeaderCard = document.createElement("h2"); // H2 Created
-
-    // Add Attributes & Values
     tagHeaderCard.setAttribute("id", `h${section.id}`);
     tagHeaderCard.setAttribute("class", "card-title pb-3");
+    tagHeaderCard.textContent = section.name;
 
-    // Create a new text node for the h2 element
-    const tagHeaderContent = document.createTextNode(section.name); // H2 Text Created
+    tagMainDiv.appendChild(tagHeaderCard); // Add Text Node as property of H2 Element
 
-    // Create Child Dependency
-    tagHeaderCard.appendChild(tagHeaderContent); // Add Text Node as property of H2
+    const buttons = buttonsBySections[section.id];
+    if (buttons) {
+        for (const button of buttons) {
+            const tagButton = createButton(`btn${button.id}`, "btn btn-outline-primary", button.name);
+            tagMainDiv.appendChild(tagButton);
 
-    //Assign Each Header to the MainDiv Object
-    tagMainDiv.appendChild(tagHeaderCard); // New H2 Added Elements & Displayed
+            if (button.sub) {
+                tagButton.setAttribute("onclick", `fnShowHide('sub${section.id}${button.name}')`);
+                const tagSubDiv = document.createElement("div");
+                tagSubDiv.setAttribute("id", `sub${section.id}${button.name}`);
+                tagSubDiv.setAttribute("class", "col-sm");
+                tagSubDiv.setAttribute("style", "display: none;");
+                
+                for (const subButton of button.sub) {
+                    const tagSubButton = createButton(`subBtn${subButton.id}`, "btn btn-outline-primary subButton", `${subButton.name} - ${subButton.price}`);
+                    tagSubDiv.appendChild(tagSubButton);
+                }
 
-    // Buttons Assigment
-    const buttonsCount = Object.keys(buttonsBySections).length;
-    // console.log(`Current Buttons Sections is ${buttonsCount}`);
-
-    // Review if the Section has Buttons
-    const reviewButtons = buttonsBySections[`${section.id}`].length;
-    console.log(`Current Buttons ${section.id} is ${reviewButtons}`);
-
-    // For Section to Iterate the buttons
-    for (const button of buttonsBySections[`${section.id}`]) {
-
-        // Assign Element Type
-        const tagButton = document.createElement("button"); // Button Created
-
-        // Add Attributes & Values
-        tagButton.setAttribute("id", `btn${button.id}`);
-        tagButton.setAttribute("class", "btn btn-outline-primary");
-        tagButton.setAttribute("type", "button");
-
-        // Create a new text node for the Button element
-        const tagButtonText = document.createTextNode(button.name); // Button Text Created
-        tagButton.appendChild(tagButtonText); // Add Text Node as property of Button
-
-        // Assign Each Button to the MainDiv Object
-        tagMainDiv.appendChild(tagButton); // New Button Added without Elements
-
-        // Verify if we have secondary buttons section to be added
-        if (button.sub) {
-
-            // Set Attribute to Main Button
-            tagButton.setAttribute("onclick", `fnShowHide('sub${section.id}${button.name}')`);
-            console.log(`Button name ${button.name} has Sub Buttons`);
-
-            // Assign Element Type
-            const tagSubDiv = document.createElement("div"); // Div Created
-
-            // Assign Each Button to the MainDiv Object
-            tagMainDiv.appendChild(tagSubDiv); // New Div Added without Elements
-
-            // Add Attributes & Values
-            tagSubDiv.setAttribute("id", `sub${section.id}${button.name}`);
-            tagSubDiv.setAttribute("class", "col-sm");
-            tagSubDiv.setAttribute("style", "display: none;");
-            
-            // Assign Each Button to the MainDiv Object
-            console.log(`Button Length${button.sub.length} inner Information`);
-
-            // For Section to Iterate the buttons
-            for (let iCounter = 0; iCounter < button.sub.length; iCounter++) {
-
-                // Assign Element Type
-                const tagSubButton = document.createElement("button"); // Button Created
-
-                // Add Attributes & Values
-                tagSubButton.setAttribute("id", `subBtn${button.sub[iCounter].id}`);
-                tagSubButton.setAttribute("class", "btn btn-outline-primary subButton");
-                tagButton.setAttribute("type", "button");
-
-                // Create a new text node for the button element
-                const tagSubButtonText = document.createTextNode(`${button.sub[iCounter].name} - ${button.sub[iCounter].price}`); // Button Text Created
-                tagSubButton.appendChild(tagSubButtonText); // Add Text Node as property of Button
-                tagSubDiv.appendChild(tagSubButton); // New Button Added without Elements
-
-                console.log(`Button name ${button.sub[iCounter].name}`);
+                tagMainDiv.appendChild(tagSubDiv);
             }
         }
+    }
 
+    return tagMainDiv;
+}
 
-        /*
-         <div style="display: block;">
-            <button id="btnSlimXS" class="btn btn-outline-primary" type="button">XS 16 a 22 cm</button>
-            <button id="btnSlimS" class="btn btn-outline-primary" type="button">S 20 a 31 cm</button>
-            <button id="btnSlimM" class="btn btn-outline-primary" type="button">M 25 a 42 cm</button>
-            <button id="btnSlimG" class="btn btn-outline-primary" type="button">G 39 a 61 cm</button>
-        </div>
-        */
-    };
-};
+/**
+ * Print On Screen
+ */
+for (const section of sections) {
+    const sectionElement = createSection(section);
+    addHeadersObject.appendChild(sectionElement);
+}

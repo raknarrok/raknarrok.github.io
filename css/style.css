@@ -252,6 +252,28 @@ a {
   background-color: #A0A0A0;
 }
 
+.mainInfo {
+  padding-top: 8em;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+}
+.modal-container img {
+  width: 200px;
+  height: 200px;
+  background-color: #000000;
+}
+
+.cart {
+  padding-right: 3em;
+}
+.cart button {
+  background-color: transparent;
+  border: none;
+}
+
 /**
 Animation Section
 */
