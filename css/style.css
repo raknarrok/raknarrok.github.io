@@ -149,6 +149,81 @@ a {
   border-width: 5px;
 }
 
+.mpk_button_primary:enabled {
+  margin: 0 2px 10px 0;
+  color: white;
+  background-color: #529e91;
+  border-radius: 12px;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-color: #acfa74;
+}
+.mpk_button_primary:enabled:hover {
+  color: white;
+  background-color: gray;
+  border-color: rgb(176, 231, 204);
+  border-width: 5px;
+}
+
+.mpk_button_primary:disabled {
+  margin: 0 2px 10px 0;
+  color: white;
+  background-color: #878f99;
+  border-radius: 12px;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-color: #acfa74;
+  opacity: 0.5;
+}
+
+.mpk_button_secondary:enabled {
+  margin: 0 2px 10px 0;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 12px;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-color: #acfa74;
+}
+.mpk_button_secondary:enabled:hover {
+  color: white;
+  background-color: gray;
+  border-color: rgb(176, 231, 204);
+  border-width: 5px;
+}
+
+.mpk_button_secondary:disabled {
+  margin: 0 2px 10px 0;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 12px;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-color: #acfa74;
+  opacity: 0.5;
+}
+
+.btnSection {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.mpk_button_close:enabled {
+  margin: 0 2px 10px 0;
+  color: white;
+  background-color: #878f99;
+  border-radius: 12px;
+  padding: 10px 15px 10px 15px;
+  border-style: solid;
+  border-color: #acfa74;
+}
+.mpk_button_close:enabled:hover {
+  color: white;
+  background-color: gray;
+  border-color: rgb(176, 231, 204);
+  border-width: 5px;
+}
+
 .btnSection {
   text-align: center;
   padding-bottom: 15px;

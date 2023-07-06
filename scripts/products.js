@@ -45,7 +45,7 @@ const printProducts = async () => {
         <p class="card-text">Estatus: ${available ? 'Disponible' : '<span>Agotados</span>'}</p>
         <p class="card-text">${desc}</p>
         <p class="card-text" name="${category}">Categoria: ${category}</p>
-        <button id="btnId${id}" onclick="addProduct(${id})" class="btn btn-primary" ${available ? '' : 'disabled'}>
+        <button id="btnId${id}" onclick="addProduct(${id})" class="mpk_button_primary" ${available ? '' : 'disabled'}>
             Agregar
         </button>
     </div>
@@ -222,7 +222,7 @@ const showShoppingCart = async () => {
           <p><b>Disponible:</b> <input id="textInput${id}" onchange="catchUpdate(event, '${id}')" type="number" style="width:5em" value="${quantity}" min="1" max="${maxQuantity}"/></p>
           <p><b>Descripcion:</b> ${desc}</p>
           <p><b>Categoria:</b> ${category}</p>
-          <button id="btnId${id}" class="btn btn-danger" onclick="deleteProduct(${id})">
+          <button id="btnId${id}" class="mpk_button_secondary" onclick="deleteProduct(${id})">
             Eliminar
           </button>
         </div>
