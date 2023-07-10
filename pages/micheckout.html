@@ -19,28 +19,10 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fontawesome/all.css">
-    <title>Mipekicha - COTIKICHA</title>
+    <title>Mipekicha - Mi Pago</title>
 </head>
 
 <body>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Collar Especial Cenicienta</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="../images/productos/nuestros_collares/collar_especial.png" alt="Cenicienta">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Menu Section -->
     <nav id="navMenu" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -86,45 +68,355 @@
                 </ul>
             </div>
         </div>
-        <div class="cart">
-            <button class="fa-solid fa-cart-shopping fa-2x" id="btnCart" data-bs-toggle="modal"
-                data-bs-target="#cartSection" style="color:aliceblue"><span id="numberProducts">0</span>
-            </button>
-        </div>
     </nav>
-
-    <!-- Header Section-->
-    <header>
-        <!-- Modal Section -->
-        <div class="modal fade" id="cartSection" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="cartLabel">Carrito</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <!-- Items To Be Displayed -->
-                    <div id="productAdded" class="modal-body">
-                        Agrega los productos que deseas comprar
-                    </div>
-                    <div class="modal-footer" id="">
-                        Total: $<span id="totalAmount">0</span>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="btnBuy" type="button" class="btn btn-primary" data-bs-dismiss="modal"
-                            disabled>Continuar Compra</button>
-                        <button id="btnClean" type="button" class="btn btn-danger" disabled>Vaciar Carrito</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
     <!-- Main Section -->
     <main class="mainInfo">
         <!-- NEW SECTION -->
-        This section is under construction
+        <!-- Main Header -->
+        <section class="heroTemplateProducts">
+            <div class="accordion accordion-flush accordionConfiguration" id="accordionFlushExample">
+                <!-- Shipping Method -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            <h4>1.- Metodo de Entrega</h4>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse show"
+                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div>
+                                <input type="radio" id="radioRetireOnLocal" name="radioShipping" value="localRetire"
+                                    required checked>
+                                <label for="radioRetireOnLocal">Retirar en Local - Sin costo</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radioNormalDelivery" name="radioShipping" value="normalDelivery"
+                                    required>
+                                <label for="radioNormalDelivery">Entrega Normal - Sin costo</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radioFastDelivery" name="radioShipping" value="fastDelivery"
+                                    required>
+                                <label for="radioFastDelivery">Entrega Rapida - Comision $100.00 MX</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radioPremiumDelivery" name="radioShipping"
+                                    value="premiumDelivery" required>
+                                <label for="radioPremiumDelivery">Entrega Premium - Comision $350.00 MX</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Billing Address -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h4>2.- Direccion de Facturacion</h4>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>No incluir direccion de facturacion
+                                <input type="checkbox" id="chkBilling" name="billingCheck">
+                            <p id="noBillingMessage"></p>
+                            </p>
+                            <div class="row g-3 formConfiguration" id="formElement">
+                                <div class="col-md-6">
+                                    <label for="inputEmailBilling" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmailBilling" required>
+                                </div>
+                                <!-- 
+                                    TODO: Add Phone Number
+                                -->
+                                <div class="col-12">
+                                    <label for="inputAddressBilling" class="form-label">Direccion</label>
+                                    <input type="text" class="form-control" id="inputAddressBilling"
+                                        placeholder="Calle, Numero Exterior/ Numero Interior, Colonia/Fraccionamiento" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddressBilling2" class="form-label">Agregar Referencias</label>
+                                    <input type="text" class="form-control" id="inputAddressBilling2"
+                                        placeholder="Entre Calles y referencia de la casa" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputCityBilling" class="form-label">Ciudad</label>
+                                    <input type="text" class="form-control" id="inputCityBilling" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="selectStateBilling" class="form-label">Estado</label>
+                                    <select id="selectStateBilling" class="form-select" required>
+                                        <option selected>Selecciona tu estado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZipBilling" class="form-label">Codigo Postal</label>
+                                    <input type="text" class="form-control" id="inputZipBilling" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shipping Address -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" id="btnShippingMain" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <h4>3.- Direccion de Envio</h4>
+                            <!-- Check box in case to be the same of Shipping Address-->
+                            <!-- Address Location details -->
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div id="divShippingLocalSection" class="accordion-body" style="display: block;">
+                            <p>Con el metodo de entrega "Retirar en local" necesitas ir a nuestras instalaciones de
+                                MIPEKICHA, y comenta que tienes un pedido mostrando tu identificacion y numero de orden.
+                            </p>
+                        </div>
+                        <div id="divShippingSection" class="accordion-body" style="display: none;">
+                            <p id="elementShipping" style="display: block;">Usar mi direccion de facturacion
+                                <input type="checkbox" id="chkShipping" name="shippingCheck">
+                            <p id="chkShipping"></p>
+                            </p>
+                            <div class="row g-3 formConfiguration" id="formElement">
+                                <div class="col-md-6">
+                                    <label for="inputRecipientShipping" class="form-label">Nombre de quien
+                                        recibe</label>
+                                    <input type="text" class="form-control" id="inputRecipientShipping" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmailShipping" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmailShipping" required>
+                                </div>
+                                <!-- TODO: Add phone number -->
+                                <div class="col-md-6">
+                                    <label for="inputPhoneShipping" class="form-label">Telefono</label>
+                                    <input type="text" class="form-control" id="inputPhoneShipping" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddressShipping" class="form-label">Direccion</label>
+                                    <input type="text" class="form-control" id="inputAddressShipping"
+                                        placeholder="Calle, Numero Exterior/ Numero Interior, Colonia/Fraccionamiento" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddressShipping2" class="form-label">Agregar Referencias</label>
+                                    <input type="text" class="form-control" id="inputAddressShipping2"
+                                        placeholder="Entre Calles y referencia de la casa" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputCityShipping" class="form-label">Ciudad</label>
+                                    <input type="text" class="form-control" id="inputCityShipping" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="selectStateShipping" class="form-label">Estado</label>
+                                    <select id="selectStateShipping" class="form-select" required>
+                                        <option selected>Selecciona tu estado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZipShipping" class="form-label">Codigo Postal</label>
+                                    <input type="text" class="form-control" id="inputZipShipping" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Payment Information -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            <h4>4.- Informacion de Pago</h4>
+                            <!-- Credit Card -->
+                            <!-- Cash -->
+                            <!-- Bank Transfer -->
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Selecciona un metodo de pago</p>
+                                    <div class="card border mt-2">
+                                        <h5 class="card-title">
+                                            <input type="radio" id="radioCash" name="radioPayment" value="RetireOnLocal"
+                                                checked>
+                                            <label for="radioCash">Efectivo</label>
+                                        </h5>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                Si tu pago es en efectivo puedes pasar a cualquier sucursal de OXXO y
+                                                realizar
+                                                el pago
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border">
+                                        <h5 class="card-title">
+                                            <input type="radio" id="radioCard" name="radioPayment"
+                                                value="RetireOnLocal">
+                                            <label for="radioCard">Tarjeta</label>
+                                        </h5>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                En la seccion "informacion de pago" agrega tu tarjeta de credito o
+                                                debito.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border">
+                                        <h5 class="card-title">
+                                            <input type="radio" id="radioTransfer" name="radioPayment"
+                                                value="RetireOnLocal">
+                                            <label for="radioTransfer">Transferencia</label>
+                                        </h5>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                Puedes realizar la transferencia a cuenta de banco desde tu banco o
+                                                aplicacion.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>Actualiza tu metodo de pago en caso de que no sea el correcto</p>
+                                    <div class="card border mt-2" id="infoCash" style="display: block;">
+                                        <h5 class="card-title">Efectivo</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                Si tu pago es en efectivo puedes pasar a cualquier sucursal de OXXO y
+                                                realizar
+                                                el pago.
+                                            </p>
+                                            <ul>
+                                                <li>Banco: BBVA Bancomer</li>
+                                                <li>Cuenta: 123456789</li>
+                                                <li>Beneficiarion: Cosmo Fulanito</li>
+                                            </ul>
+                                            <p>
+                                                <b>Importante</b> Toma foto a tu ticket y mandalo al correo electronico:
+                                                curso_ventas@mailinator.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border" id="infoTransfer" style="display: none;">
+                                        <h5 class="card-title">Transferencia</h5>
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                Desde tu banco o aplicacion realiza la transferencia a la cuenta
+                                                siguiente.
+                                            </p>
+                                            <ul>
+                                                <li>Banco: BBVA Bancomer</li>
+                                                <li>Cuenta: 123456789</li>
+                                                <li>Beneficiarion: Cosmo Fulanito</li>
+                                            </ul>
+                                            <p>
+                                                <b>Importante</b> Toma foto a tu ticket y mandalo al correo electronico:
+                                                curso_ventas@mailinator.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card border creditCard" id="infoCard" style="display: none;">
+                                        <h5 class="card-title">Tarjeta</h5>
+                                        <div class="card-body">
+                                            <div class="cart-text container">
+                                                <h2>Agrega los datos de tu tarjeta</h2>
+                                                <div>
+                                                    <div class="form-group">
+                                                        <label for="inputName">Titular:</label>
+                                                        <input type="text" id="inputName" name="name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputCardNumber">Número de tarjeta:</label>
+                                                        <input type="text" id="inputCardNumber" name="card" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputExpiry">Fecha de vencimiento:</label>
+                                                        <input type="text" id="inputExpiry" name="expiry" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputCvv">CVV:</label>
+                                                        <input type="text" id="inputCvv" name="cvv" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Order Summary -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" id="btnOrderSummary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                <h4 class="text-center"> 5.- Resumen de Orden</h4>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <!-- This section is still under construction  -->
+                            </div>
+                            <div class="col-sm text-center text-dark">
+                                <div id="products_container" class="row mt-5 d-flex justify-content-center">
+                                </div>
+                                <!-- As well we will also have button to remove the entery product -->
+                                <div class="card-footer mb-2 border">
+                                    <p><b>Detalles de Compra</b></p>
+                                    <p>Total de Productos: <span id="spnTotalProducts"></span></p>
+                                    <p>Subtotal: <span id="spnSubtotal"></span></p>
+                                    <p>IVA: <span id="spnIva"></span></p>
+                                    <p>Costo Envio: <span id="spnShippingAmount"></span></p>
+                                    <p>Total: <span id="spnTotal"></span></p>
+                                </div>
+                            </div>
+                            <!-- Continue buton to complete the delivery-->
+                            <div class="col-sm text-center" id="divVerify" style="display: block;">
+                                <div id="divEmailSecondary" style="display:none;">
+                                    <p><b>Agrega tu correo electronico </b>para recibir tu comprobante de compra</p>
+                                    <label for="inputSecondaryEmail">Correo:</label>
+                                    <input type="text" id="inputSecondaryEmail" name="emalSecondary" required>
+                                </div>
+                                <p>
+                                    Al dar click en "Confirmar Datos" aceptas que los datos que agregaste son correctos 
+                                    y que estas de acuerdo con nuestras politicas de privacidad
+                                </p>
+                                <button id="btnVerify" class="btn btn-secondary btn-lg mt-3 mb-3">Confirmar Datos</button>
+                            </div>
+                            <form id="contactform"
+                                action="https://formsubmit.io/send/31909461-65bc-45b4-8a32-b49f206bc643" method="POST">
+                                <input name="_formsubmit_id" type="text" style="display:none">
+                                <div hidden>
+                                    <input name="name" type="text" id="name" placeholder="tu nombre">
+                                    <input name="email" type="email" id="email" placeholder="tu correo">
+                                    <textarea name="comment" id="comment" rows="1"></textarea>
+                                </div>
+                                <div class="col-sm text-center" id="divContinue" style="display: none;">
+                                    <button id="btnContinue" type="submit" class="mpk_button_primary btn-lg mb-3">
+                                        Confirmar Compra
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="col-sm text-center" id="divBack" style="display: none;">
+                                <button id="btnBack" class="mpk_button_secondary btn-lg mb-3">Regresar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
     <!-- Footer Section -->
@@ -189,7 +481,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
     <script src="../script.js"></script>
     <script src="../scripts/utility.js"></script>
-    <script src="../scripts/products.js"></script>
+    <script src="../scripts/checkout.js"></script>
 </body>
 
 </html>
