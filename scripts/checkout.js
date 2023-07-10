@@ -341,7 +341,7 @@ btnContinue.onclick = () => {
   if (!regexCorreo.test(checkOutTracker.billingAddress.email) && !chkBilling.checked) {
     emptyFieldsTracker.set('billingAddress', false)
     isMissingFields = true
-  } else if (!regexCorreo.test(checkOutTracker.shippingAddress.email) && !chkShipping.checked) {
+  } else if (!regexCorreo.test(checkOutTracker.shippingAddress.email) && !radioRetireOnLocal.checked) {
     emptyFieldsTracker.set('shippingAddress', false)
     isMissingFields = true
   } else if (!regexCorreo.test(checkOutTracker.alternativeAddress.email) && radioRetireOnLocal.checked) {
