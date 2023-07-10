@@ -212,6 +212,7 @@ $borderHoverColor: rgb(176, 231, 204);
     padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
     border-style: solid;
     border-color: $borderColor;
+
     &:hover {
         color: $txtColor;
         background-color: $bgHoverColor;
@@ -244,6 +245,7 @@ $borderHoverColor: rgb(176, 231, 204);
     padding: 10px 15px 10px 15px; // Top | Right | Bottom | Left
     border-style: solid;
     border-color: $borderColor;
+
     &:hover {
         color: $txtColor;
         background-color: $bgHoverColor;
@@ -425,6 +427,60 @@ Animation Section
         transform-origin: bottom left;
     }
 }
+
+#accordionFlushExample button:hover {
+    background-color: #0056b3;
+    color: aliceblue;
+}
+
+.formConfiguration {
+
+    & input {
+        width: 40%;
+    }
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+
+    & h1 {
+        text-align: center;
+      }
+
+    & .form-group {
+      margin-bottom: 15px;
+    }
+      
+    & label {
+      display: block;
+    }
+      
+    & input[type="text"],
+    & input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+      
+    & button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  
+  #accordionFlushExample button:hover {
+    background-color: #0056b3;
+    color: aliceblue;
+  }
 
 /*
     Text SlideDown
